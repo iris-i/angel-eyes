@@ -1,0 +1,37 @@
+.wrapper__header.header {
+  background: url('../images/rainbow-header-repeat.svg') repeat-x;
+  background-size: 1000px;
+  min-height: 500px;
+}
+
+.region.region-header {
+  border-radius: 4px;
+  background: #fff;
+
+  // Logo
+  .block-system-branding-block {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+  }
+
+  // Visually Hide site name
+  .site-name { @extend .visually-hidden !optional; }
+
+  // Main menu
+  ul.menu {
+    list-style: none outside;
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 0;
+    border: 1px solid #bbb;
+  }
+
+  .menu-item {
+    display: inline-block;
+    width: auto;
+    padding: .5em;
+    border-right: 1px solid #aaa;
+  }
+}

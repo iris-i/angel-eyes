@@ -1,0 +1,27 @@
+@import 'breakpoint-variables';
+@import 'susy-overrides';
+
+// Set max-width on main page sections
+.wrapper__main--inner,
+.header__inner,
+.menu--main,
+.breadcrumb {
+  @include container(80em center);
+  width: 95%;
+  position: relative;
+
+  @include breakpoint($xs){
+    width: 90%;
+  }
+
+  // Flex grid for page layout
+  .wrapper__main--inner {
+    @extend .row;
+
+     main,
+     .layout-sidebar-first,
+     .layout-sidebar-second {
+       @extend .column;
+     }
+  }
+}

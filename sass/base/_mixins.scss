@@ -1,0 +1,16 @@
+// ============ Mixins =================
+// TABLE OF CONTENTS
+// 1. Visually Hidden element
+
+// 1. Visually Hidden Element --------------
+// Uses @extend to reduce bloat since output remains the same
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
